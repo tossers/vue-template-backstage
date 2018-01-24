@@ -1,0 +1,65 @@
+@orange: #f56c31;
+
+a {
+    color: #2795f5;
+    cursor: pointer;
+    font-size: 12px;
+    &:hover {
+        color: #66b1ff;
+    }
+}
+
+//垂直居中
+.flex-vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+//el-button的基本样式修改
+.el-button {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.el-button {
+    position: relative;
+    &:active:after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        bottom: -1px;
+        right: -1px;
+        border-radius: inherit;
+        border: 0 solid rgba(16, 142, 233, 0.7);
+        opacity: .4;
+        -webkit-animation: buttonEffect .4s;
+        animation: buttonEffect .4s;
+    }
+}
+
+@keyframes buttonEffect {
+    to {
+        opacity: 0;
+        top: -6px;
+        left: -6px;
+        bottom: -6px;
+        right: -6px;
+        border-width: 6px
+    }
+}
+
+//el-pagination
+.el-pagination.is-background .el-pager li.active {
+    background: @orange;
+}
+
+//修改弹窗垂直居中
+
+.el-dialog__wrapper{
+    .flex-vertical-center;
+    .el-dialog {
+        margin-top: 0!important;
+    }
+}

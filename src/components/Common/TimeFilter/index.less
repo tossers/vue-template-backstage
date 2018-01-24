@@ -1,0 +1,46 @@
+@import "../../../default";
+.timeFilter {
+    .flex-vertical-center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 14px;
+    .timeFilter-left{
+        .flex-vertical-center;
+        .timeFilter-radio {
+            margin-right: 40px;
+            label {
+                margin-left: 20px;
+            }
+        }
+        .timeFilter-date {
+            :global(.el-date-editor) {
+                width: 250Px;
+                margin-left: 10px;
+                border-radius: 0;
+                :global(.el-range-input) {
+                    width: 35%;
+                }
+            }
+            & > button {
+                background: #e6e6e6;
+                border-radius: 2px;
+                width: 52Px;
+                height: 32Px;
+                font-size: 14px;
+                color: #ffffff;
+                padding: 0;
+                border: 0;
+            }
+        }
+    }
+    .export {
+        background:#ffffff;
+        box-shadow:0 2px 6px 0 rgba(29,30,31,0.15);
+        border-radius:2px;
+        width:90Px;
+        height:32Px;
+        font-size:12px;
+        color:#636975;
+    }
+
+}

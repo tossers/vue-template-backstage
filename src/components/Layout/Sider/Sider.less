@@ -1,0 +1,47 @@
+@import '../../../default';
+.sider {
+    .sider-logo {
+        .flex-vertical-center;
+        height: 80px;
+        color: #FFF;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 20px;
+        & > span:nth-child(1) {
+            flex: 0.35;
+            img {
+                width: 56px;
+                height: 36px;
+                margin-right: 10px;
+                float: right;
+            }
+        }
+        & > span:nth-child(2) {
+            flex: 0.6;
+        }
+    }
+
+    .el-menu {
+        background: #292b2e;
+        border: 0;
+        .el-menu-item {
+            .flex-vertical-center;
+            font-size: 16px;
+            color: #FFF;
+            border-left: 3px solid #292b2e;
+            &:hover, &:focus, &.is-active {
+                background: #0e1014;
+                border-color: @orange;
+                .icon {
+                    fill: @orange;
+                }
+            }
+            .icon {
+                margin-right: 8px;
+                width: 40Px;
+                height: 20Px;
+                fill: #FFF;
+            }
+        }
+    }
+}

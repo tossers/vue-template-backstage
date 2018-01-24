@@ -1,0 +1,52 @@
+@import "../../../default";
+.header {
+    .flex-vertical-center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #dfe4ed;
+
+    .header-title {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .header-nav {
+        display: flex;
+        font-size: 20px;
+        color: #9ca2ad;
+        & > div {
+            margin: 0 20px;
+            cursor: pointer;
+            &:hover {
+                .header-nav-chosen;
+            }
+            & > span {
+                color: #F64340;
+                font-size: 18px;
+            }
+        }
+
+        .header-nav-chosen {
+            color: @orange;
+        }
+    }
+    .header-search {
+        display: flex;
+        .el-input{
+            width: 300px;
+            /deep/ input {
+                //width: 300px;
+                border-radius: 0;
+                border: 1px solid #d8dde6;
+                border-right: 0;
+            }
+        }
+
+        button {
+            width: 60px;
+            border-radius: 0;
+            background:#ffffff;
+            border:1px solid #d8dde6;
+        }
+    }
+}
