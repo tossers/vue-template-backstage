@@ -7,8 +7,8 @@
             :handleConfirm="handleConfirm"
         >
             <span slot="title">{{title}}</span>
-            <orderPop-edit v-if="confirmText==='保存'" slot="content" :tableData="tableData"></orderPop-edit>
-            <orderPop-static slot="content" v-else :tableData="tableData"></orderPop-static>
+            <common-edit v-if="confirmText==='保存'" slot="content" :tableData="tableData"></common-edit>
+            <common-static slot="content" v-else :tableData="tableData"></common-static>
             <slot>button</slot>
         </common-popover>
     </div>
@@ -16,13 +16,11 @@
 
 <script>
     import Vue from 'vue';
-    import Edit from './Edit';
-    import Static from './Static';
-    import Popover from '../Popover';
+    import Common from 'components/Common'
     import {getOrderInfo} from 'api';
-    Vue.component('orderPop-edit', Edit);
-    Vue.component('orderPop-static', Static);
-    Vue.component('common-popover', Popover);
+    Vue.component('common-edit', Common.EditOrder);
+    Vue.component('common-static', Common.StaticOrder);
+    Vue.component('common-popover', Common.Popover);
     export default {
         //type 1修改2添加
         props: ['title', 'type'],

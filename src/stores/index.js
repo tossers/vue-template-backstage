@@ -1,8 +1,8 @@
-import Vue from 'vue';
+// import Vue from 'vue';
 import Vuex from 'vuex';
 import {getUserInfo} from './api';
 
-Vue.use(Vuex);
+// Vue.use(Vuex);
 
 const state = {
     userInfo: {

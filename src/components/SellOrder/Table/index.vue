@@ -23,10 +23,10 @@
             </el-table-column>
             <el-table-column label="操作" class-name="sellOrder-table-noPadding">
                 <template slot-scope="scope">
-                    <sellOrder-table-popover v-if="scope.row.status===0||scope.row.status===1" title="添加安装单">
+                    <sellOrder-table-popover v-if="scope.row.status===0||scope.row.status===1" title="添加安装单" :type="1">
                         <el-button class="addBtn">添加安装单</el-button>
                     </sellOrder-table-popover>
-                    <sellOrder-table-popover v-if="scope.row.status===2" title="安装单详情">
+                    <sellOrder-table-popover v-if="scope.row.status===2" title="安装单详情" :type="2">
                         <a >查看安装单详情</a>
                     </sellOrder-table-popover>
                     <common-confirm><a v-if="scope.row.status===3">删除</a></common-confirm>

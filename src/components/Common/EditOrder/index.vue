@@ -37,7 +37,7 @@
 
 <script>
     import Vue from 'vue';
-    import OrderForm from '../../OrderForm';
+    import OrderForm from '../OrderForm';
 
     Vue.component('common-orderForm', OrderForm);
     export default {
