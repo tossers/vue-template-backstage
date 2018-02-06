@@ -53,7 +53,7 @@ mock('http://installOrderList.com', {
         'client': '@cname',
         'installDate': () => Random.datetime('yyyy-MM-dd'),
         'phone': () => Random.integer(13266700000, 13366700000),
-        'company': '广州优微家机电设备安装有限公司',
+        'company': 'XXXX机电设备安装有限公司',
         'team': 'A4安装队',
         'type': () => Random.integer(0, 3),     //0送装1送货2物流3自提
         'createTime': () => Random.datetime('yyyy-MM-dd HH:mm'),

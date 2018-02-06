@@ -10,14 +10,14 @@ const menus = [{
     icon: 'anzhuangdanguanli-moren',
 }, {
     id: 3,
+    name: '统计表',
+    router: '/Report',
+    icon: 'anzhuangtongjibiao-xuanzhong',
+}, {
+    id: 4,
     name: '安装公司管理',
     router: '/company',
     icon: 'anzhuangdanguanli-xuanzhong',
-}, {
-    id: 4,
-    name: '安装统计表',
-    router: '/table',
-    icon: 'anzhuangtongjibiao-xuanzhong',
 }, {
     id: 5,
     name: '内勤结算报表',

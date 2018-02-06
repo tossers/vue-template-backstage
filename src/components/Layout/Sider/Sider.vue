@@ -2,7 +2,7 @@
     <div class="sider">
         <div class="sider-logo ">
             <span><img src="~assets/logo.png" alt=""></span>
-            <span>亿星</span>
+            <span>Logo</span>
         </div>
         <el-menu
             :default-active="defaultMenu"
