@@ -1,7 +1,7 @@
 # 后台管理模板
 > Vue+Mockjs+Element-UI
 
-演示地址 [https://tossers.github.io/vueTemplate](https://tossers.github.io/vueTemplate)
+演示地址 [https://tossers.github.io/otherPages/vueTemplate](https://tossers.github.io/vueTemplate)
 
 ## 特性
 * 基于vue,vuex,Mock后台管理模版实践。
